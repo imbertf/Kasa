@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+$textColor: #ff6060;
+$footerColor: black;
+$footerLogo: white;

@@ -1,0 +1,29 @@
+.err404Container {
+    // border: 1px solid green;
+    text-align: center;
+
+    &--404 {
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 137px;
+        letter-spacing: 0em;
+    }
+
+    &--txt {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+    }
+
+    &--link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+    }
+
+    & a {
+        color: $textColor;
+    }
+}

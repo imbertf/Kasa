@@ -1,0 +1,13 @@
+.footerContainer {
+    width: 100%;
+    background-color: $footerColor;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & img {
+        filter: brightness(10);
+        margin-top: 20px;
+    }
+}
