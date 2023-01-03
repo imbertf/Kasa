@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
-// import Banner from "./Banner";
 
 const Header = () => {
     return (
@@ -10,7 +9,6 @@ const Header = () => {
                 <Logo />
                 <Navigation />
             </div>
-            {/* <Banner /> */}
         </div>
     );
 };
