@@ -1,0 +1,91 @@
+.collapse {
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px 0;
+    @media screen and (max-width: 800px) {
+        width: 90%;
+    }
+
+    &__closed {
+        display: none;
+    }
+
+    &--description {
+        background: $textColor;
+        color: white;
+        border-radius: 5px;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--texte p {
+        margin: 0;
+        padding: 30px;
+        border-radius: 5px;
+        background: $collapseBackground;
+    }
+
+    & h2 {
+        margin: 10px 0;
+    }
+
+    &--button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.rotate-center {
+    -webkit-animation: rotate-center 0.25s ease-in-out both;
+    animation: rotate-center 0.25s ease-in-out both;
+}
+
+.rotate-reverse {
+    -webkit-animation: rotate-reverse 0.25s ease-in-out both;
+    animation: rotate-reverse 0.25s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes rotate-reverse {
+    0% {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+@keyframes rotate-reverse {
+    0% {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
