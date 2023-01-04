@@ -3,3 +3,12 @@
     height: 425px;
     position: relative;
 }
+
+.pageNumber {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+}

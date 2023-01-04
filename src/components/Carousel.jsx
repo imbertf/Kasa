@@ -53,6 +53,9 @@ const Carousel = ({ slides }) => {
             <MdArrowBackIos style={backArrow} onClick={previousImage} />
             <MdArrowForwardIos style={forwardArrow} onClick={nextImage} />
             <div style={slideStyles}></div>
+            <div className="pageNumber">
+                {currentIndex + 1}/{slides.length}
+            </div>
         </>
     );
 };
