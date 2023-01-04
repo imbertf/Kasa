@@ -1,9 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Card = ({ accommodation }) => {
     return (
-        <NavLink to={`/logements/${accommodation.id}`}>
+        <Link to={`/${accommodation.id}`}>
             <li
                 className="card"
                 style={{
@@ -13,7 +13,7 @@ const Card = ({ accommodation }) => {
             >
                 <p>{accommodation.title}</p>
             </li>
-        </NavLink>
+        </Link>
     );
 };
 

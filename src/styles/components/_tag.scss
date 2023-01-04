@@ -1,0 +1,18 @@
+.tag__container {
+    border: 1px solid green;
+    display: flex;
+}
+
+.tag {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 5px;
+    background: $textColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+        margin: 0;
+        color: white;
+    }
+}

@@ -1,12 +1,9 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 const Error404 = () => {
     return (
         <Fragment>
-            <Header />
             <div className="err404Container">
                 <p className="err404Container--404">404</p>
                 <p className="err404Container--txt">
@@ -21,7 +18,6 @@ const Error404 = () => {
                     </p>
                 </NavLink>
             </div>
-            <Footer />
         </Fragment>
     );
 };

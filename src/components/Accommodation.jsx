@@ -11,7 +11,7 @@ const Accommodation = () => {
     }, []);
 
     return (
-        <ul className="accommodationContainer">
+        <ul className="cardsContainer">
             {data.map((accommodation) => (
                 <Card key={accommodation.id} accommodation={accommodation} />
             ))}
