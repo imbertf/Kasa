@@ -1,18 +1,11 @@
 .bannerContainer {
-    // border: 1px solid green;
-    // min-width: 300px;
     border-radius: 10px;
     height: 110px;
-    background: url("../../assets/images/mobile_banner.jpg");
     background-size: cover;
     overflow: hidden;
     width: 90%;
 
-    &--about {
-        background: url("../../assets/images/about_banner_mobile.jpg");
-    }
     @media screen and (min-width: 800px) {
-        background: url("../../assets/images/home_banner.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 200px;

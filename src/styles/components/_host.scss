@@ -1,0 +1,35 @@
+.host__container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    @media screen and (max-width: 800px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    & p {
+        font-size: $smallFont;
+        width: min-content;
+        text-align: right;
+        @media screen and (max-width: 800px) {
+            font-size: $extraSmallFont;
+        }
+    }
+
+    & img {
+        height: 64px;
+        border-radius: 35px;
+        margin-left: 10px;
+
+        @media screen and (max-width: 800px) {
+            height: 32px;
+            border-radius: 20px;
+        }
+    }
+}

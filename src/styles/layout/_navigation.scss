@@ -2,10 +2,14 @@
     // border: 1px solid green;
     ul {
         display: flex;
+        padding: 0;
 
         a {
             text-decoration: none;
             padding: 10px;
+            @media screen and (max-width: 800px) {
+                font-size: $extraSmallFont;
+            }
 
             li {
                 color: $textColor;

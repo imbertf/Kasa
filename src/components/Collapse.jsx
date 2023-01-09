@@ -8,7 +8,7 @@ const Collapse = ({ title, texte }) => {
     };
 
     return (
-        <div className="aboutContainer">
+        <div className="collapseContainer">
             <div className="collapse" onClick={showInfo}>
                 <div className="collapse--description">
                     <h2>{title}</h2>

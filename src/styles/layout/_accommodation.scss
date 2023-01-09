@@ -1,16 +1,32 @@
 .accommodationContainer {
-    border: 1px solid green;
     width: 90%;
     & h2 {
-        border: 1px solid green;
+        @media screen and (max-width: 800px) {
+            font-size: $smallFont;
+        }
     }
 }
 
 .location {
-    border: 1px solid green;
+    @media screen and (max-width: 800px) {
+        font-size: $extraSmallFont;
+    }
 }
 
 .accommodation__collapse__container {
-    // border: 1px solid green;
     display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.logement__host__infos {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

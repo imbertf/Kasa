@@ -7,7 +7,7 @@ const Error404 = () => {
             <div className="err404Container">
                 <p className="err404Container--404">404</p>
                 <p className="err404Container--txt">
-                    Oups ! La page que vous demnadez n'existe pas.
+                    Oups! La page que vous demandez n'existe pas.
                 </p>
                 <NavLink
                     to="/"

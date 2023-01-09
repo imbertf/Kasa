@@ -1,5 +1,4 @@
 .carousel__container {
-    border: 1px solid green;
     height: 425px;
     position: relative;
 }
@@ -11,4 +10,7 @@
     font-size: 18px;
     color: white;
     z-index: 1;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 }

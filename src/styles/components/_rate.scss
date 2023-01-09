@@ -1,4 +1,9 @@
-.rateContainer {
-    border: 1px solid green;
-    width: 200px;
+.rate__container {
+    & img {
+        width: 25px;
+
+        @media screen and (max-width: 800px) {
+            width: 15px;
+        }
+    }
 }

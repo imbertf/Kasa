@@ -3,17 +3,23 @@
     text-align: center;
 
     &--404 {
-        font-size: 96px;
+        font-size: 130px;
         font-weight: 700;
         line-height: 137px;
         letter-spacing: 0em;
+        @media screen and (max-width: 800px) {
+            font-size: 100px;
+        }
     }
 
     &--txt {
-        font-size: 18px;
+        font-size: $mediumFont;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0em;
+        @media screen and (max-width: 800px) {
+            font-size: $smallFont;
+        }
     }
 
     &--link {
