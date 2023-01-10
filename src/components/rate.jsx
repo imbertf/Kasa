@@ -2,6 +2,7 @@ import React from "react";
 import Star from "../assets/images/star.png";
 import redStar from "../assets/images/redStar.png";
 
+// Will compare props scaleValue with range array to display red stars or white stars
 const Rate = ({ scaleValue }) => {
     const range = [1, 2, 3, 4, 5];
 

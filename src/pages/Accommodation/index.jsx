@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Collapse from "../../components/Collapse";
 import Tag from "../../components/Tag";
-import data from "../../assets/data/logements.json";
+import axios from "axios";
 import { useParams } from "react-router-dom";
-import Host from "../../components/host";
-import Rate from "../../components/rate";
+import Host from "../../components/Host";
+import Rate from "../../components/Rate";
 import Carousel from "../../components/Carousel";
 import Error404 from "../Error";
 
+// Display right page depending on extracted ID from URL
+// Function will compare ID url with ID in data and render logement page
+// If ID is wrong, user will be renavigate to 404 error page
+// Axios is used to get future data when backend will be operational
 const Index = () => {
     const { id } = useParams();
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        axios.get("/logements/logements.json").then((res) => setData(res.data));
+    }, []);
+
     const logementData = data.find((logement) => logement.id === id);
 
     return logementData ? (

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
+// Add css class to navigation bar element if user is on the page linked to this element
 const Error404 = () => {
     return (
         <Fragment>
