@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import arrow from "../assets/images/collapse_arrow.png";
 
 const Collapse = ({ title, texte }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Collapse = ({ title, texte }) => {
                     <h2>{title}</h2>
                     <img
                         className={isOpen ? "rotate-center" : "rotate-reverse"}
-                        src="./images/collapse_arrow.png"
+                        src={arrow}
                         alt="fleche"
                     ></img>
                 </div>
