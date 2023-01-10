@@ -3,6 +3,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
+// Get accommodation data from API
+// Create <UL> with Card component and provide data from API as props to it
 const Accommodation = () => {
     const [data, setData] = useState([]);
 

@@ -1,7 +1,13 @@
-import React from "react";
+// import React from "react";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
-const callApi = () => {
-    // Ajouter appel API
-};
+// const callApi = () => {
+//     const [data, setData] = useState([]);
 
-export default callApi;
+//     useEffect(() => {
+//         axios.get("/logements/logements.json").then((res) => setData(res.data));
+//     }, []);
+// };
+
+// export default callApi;
