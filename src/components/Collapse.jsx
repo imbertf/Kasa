@@ -14,7 +14,7 @@ const Collapse = ({ title, texte }) => {
                 <div className="collapse--description">
                     <h2>{title}</h2>
                     <img
-                        className={isOpen ? "rotate-center" : "rotate-reverse"}
+                        className={isOpen ? "rotate-reverse" : "rotate-center"}
                         src={arrow}
                         alt="fleche"
                     ></img>

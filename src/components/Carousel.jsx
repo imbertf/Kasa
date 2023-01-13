@@ -55,11 +55,20 @@ const Carousel = ({ slides }) => {
         setCurrentIndex(newIndex);
     };
 
+    // This CONST will be use to test if we have only 1 image in array
+    // If there are more than 1, display navigation arrow on pictures
+    const slideArrayLength = slides.length;
+
     // pageNumber div use currentIndex + number 1 to show current image displayed on slides array
     return (
         <>
-            <MdArrowBackIos style={backArrow} onClick={previousImage} />
-            <MdArrowForwardIos style={forwardArrow} onClick={nextImage} />
+            {slideArrayLength > 1 && (
+                <MdArrowBackIos style={backArrow} onClick={previousImage} />
+            )}
+            {slideArrayLength > 1 && (
+                <MdArrowForwardIos style={forwardArrow} onClick={nextImage} />
+            )}
+
             <div style={slideStyles}></div>
             <div className="pageNumber">
                 {currentIndex + 1}/{slides.length}
