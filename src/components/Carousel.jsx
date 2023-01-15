@@ -9,7 +9,7 @@ const Carousel = ({ slides }) => {
     const slideStyles = {
         width: "100%",
         height: "100%",
-        borderRadius: "10px",
+        borderRadius: "25px",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundImage: `url(${slides[currentIndex]})`,
@@ -70,9 +70,11 @@ const Carousel = ({ slides }) => {
             )}
 
             <div style={slideStyles}></div>
-            <div className="pageNumber">
-                {currentIndex + 1}/{slides.length}
-            </div>
+            {slideArrayLength > 1 && (
+                <div className="pageNumber">
+                    {currentIndex + 1}/{slides.length}
+                </div>
+            )}
         </>
     );
 };
